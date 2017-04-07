@@ -1,12 +1,13 @@
-cmake_minimum_required(VERSION 3.1.0)
+cmake_minimum_required(VERSION 2.8.0)
 project(easypr)
 
 # c++11 required
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -std=c++0x")
 
 if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
-  set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "/usr/local/opt/opencv3")
+  set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH})
 endif ()
 
 # OpenVC3 required

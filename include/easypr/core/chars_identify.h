@@ -20,7 +20,7 @@ class CharsIdentify {
   void classifyChinese(std::vector<CCharacter>& charVec);
 
   std::pair<std::string, std::string> identify(cv::Mat input, bool isChinese = false);
-  int identify(std::vector<cv::Mat> inputs, std::vector<std::pair<std::string, std::string>>& outputs,
+  int identify(std::vector<cv::Mat> inputs, std::vector<std::pair<std::string, std::string> >& outputs,
     std::vector<bool> isChineseVec);
 
   std::pair<std::string, std::string> identifyChinese(cv::Mat input, float& result, bool& isChinese);
